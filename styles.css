@@ -654,12 +654,12 @@
     }
 
     #godmaster-video, #recipes-video {
-        width: 180px;
+        width: 240px;
         height: auto;
     }
 
     .pe_ss {
-        width: 100px;
+        width: 140px;
         height: auto;
     }
 
@@ -675,12 +675,12 @@
     }
 
     #godmaster-video, #recipes-video {
-        width: 140px;
+        width: 160px;
         height: auto;
     }
 
     .pe_ss {
-        width: 60px;
+        width: 90px;
         height: auto;
     }
     .projects__card h2 {
