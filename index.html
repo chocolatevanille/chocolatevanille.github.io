@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noël's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/f1174fc73c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navbar Section -->
+     <nav class="navbar">
+        <div class="navbar__container">
+            <a href="#home" id="navbar__logo">Noël's Portfolio</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <!-- replace this later with an icon -->
+                 <span class="bar"></span>
+                 <span class="bar"></span>
+                 <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="#home" class="navbar__links" id="home-page">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#about" class="navbar__links" id="about-page">What I Do</a>
+                </li> 
+                <li class="navbar__item">
+                    <a href="#projects" class="navbar__links" id="projects-page">Projects</a>
+                </li> 
+                <li class="navbar__btn">
+                    <a href="#contact" class="button" id="contact">Contact</a>
+                </li>  
+            </ul>
+        </div>
+     </nav>
+
+     <!-- Hero Section -->
+      <div class="hero" id="home">
+        <div class="hero__container">
+            <h1 class="hero__heading"><span>Noël Aurora Barron</span></h1>
+            <p class="hero__description">Software Engineer</p>
+            <button class="main__btn"><a href="#">Resume</a></button>
+        </div>
+      </div>
+
+      <!-- About Section -->
+      <div class="main" id="about">
+        <div class="main__container">
+            <div class="main__img--container">
+                <div class="main__img--card"><i class="fa-solid fa-cube"></i></div>
+            </div>
+            <div class="main__content">
+                <h1>What do I do?</h1>
+                <h2>I write code at a professional level</h2>
+                <p>Front-end design, back-end services, database management, AI engineering</p>
+                <button class="main__btn"><a href="#">GitHub</a></button>
+            </div>
+        </div>
+      </div>
+
+      <!-- Projects Section -->
+       <div class="projects" id="projects">
+        <h1>My Projects</h1>
+        <div class="projects__wrapper">
+            <div class="projects__card" id="godmaster-card">
+                <h2>GodmasterHelper</h2>
+                <h3>Object Oriented Programming</h3>
+                <p>
+                    This executable allows players of the hit video game Hollow Knight to track their 
+                    progress and abilities in the Godmaster DLC.
+                </p>
+                <p>
+                    I learned how to design a full GUI in Python complete with buttons, drop-down 
+                    menus, images, pop-up windows, and more; save data from files into class objects and 
+                    export that data back into files; loop for user input; and create Python executables.
+                </p>
+                <iframe width="640" height="360" src="https://www.youtube.com/embed/Y7abImabS2Q?si=DWM0GJxyLIh9xjSA" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen id="godmaster-video"></iframe>
+                <div class="projects__btn" id="godmaster-button"><button>GitHub</button></div>
+            </div>
+            <div class="projects__card" id="portfolio-card">
+                <h2>Portfolio Website</h2>
+                <h3>HTML, CSS, and JavaScript in Action</h3>
+                <p>
+                    You're on it! Hope you like it!
+                </p>
+                <p>
+                    I learned how to create an attractive and functional navbar using a combination of CSS, HTML,
+                    and JS, make it functional on mobile or otherwise small devices with a dropdown menu, style 
+                    beautiful divs and buttons, embed YouTube videos, implement smooth scrolling, expand elements 
+                    on hover, and create a detailed footer.
+                </p>
+                <div class="projects__btn" id="portfolio-button"><button>GitHub</button></div>
+            </div>
+            <div class="projects__card" id="recipes-card">
+                <h2>Recipes</h2>
+                <h3>Knowledge, Representation, and Reasoning (KRR) AI in Python</h3>
+                <div class="projects__btn" id="recipes-button"><button>GitHub</button></div>
+            </div>
+            <div class="projects__card" id="pokemonexchange-card">
+                <h2>/r/PokemonExchange CSS</h2>
+                <h3>CSS on Reddit!</h3>
+                <div class="projects__btn" id="pokemonexchange-button"><button>GitHub</button></div>
+            </div>
+        </div>
+       </div>
+
+     <script src="app.js"><</script>
+</body>
+</html>
