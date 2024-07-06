@@ -639,6 +639,23 @@
     }
 }
 
+@media screen and (max-width: 360px) {
+    .projects__card {
+        height: 900px;
+        width: 260px;
+    }
+
+    #godmaster-video, #recipes-video {
+        width: 180px;
+        height: auto;
+    }
+
+    .pe_ss {
+        width: 100px;
+        height: auto;
+    }
+}
+
 /* Footer CSS */
 
 .footer__container {
