@@ -9,31 +9,31 @@
 </head>
 <body>
     <!-- Navbar Section -->
-     <nav class="navbar">
+    <nav class="navbar">
         <div class="navbar__container">
-            <a href="#home" id="navbar__logo">Noël's Portfolio</a>
-            <div class="navbar__toggle" id="mobile-menu">
-                <!-- replace this later with an icon -->
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-            <ul class="navbar__menu">
-                <li class="navbar__item">
-                    <a href="#home" class="navbar__links" id="home-page">Home</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="#about" class="navbar__links" id="about-page">What I Do</a>
-                </li> 
-                <li class="navbar__item">
-                    <a href="#projects" class="navbar__links" id="projects-page">Projects</a>
-                </li> 
-                <li class="navbar__btn">
-                    <a href="#contact" class="button" id="contact">Contact</a>
-                </li>  
-            </ul>
+          <a href="#home" id="navbar__logo">Noël's Portfolio</a>
+          <div class="navbar__toggle" id="mobile-menu">
+            <span class="bar"></span> <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <ul class="navbar__menu">
+            <li class="navbar__item">
+              <a href="#home" class="navbar__links" id="home-page">Home</a>
+            </li>
+            <li class="navbar__item">
+              <a href="#about" class="navbar__links" id="about-page">About</a>
+            </li>
+            <li class="navbar__item">
+              <a href="#projects" class="navbar__links" id="projects-page">
+                Projects
+              </a>
+            </li>
+            <li class="navbar__btn">
+              <a href="#sign-up" class="button" id="signup">Contact</a>
+            </li>
+          </ul>
         </div>
-    </nav>
+      </nav>
 
      <!-- Hero Section -->
       <div class="hero" id="home">
@@ -41,7 +41,7 @@
             <h1 class="hero__heading"><span>Noël Aurora Barron</span></h1>
             <p class="hero__description">Software Engineer</p>
             <p class="education">B.S. Computer Science, Northwestern University, 2024</p>
-            <button class="main__btn"><a href="#">Resume</a></button>
+            <button class="main__btn"><a href="/docs/resume_noelbarron.pdf" target="_blank">Resume</a></button>
         </div>
       </div>
 
@@ -55,7 +55,7 @@
                 <h1>What do I do?</h1>
                 <h2>I write code at a professional level</h2>
                 <p>Front-end design, back-end services, database management, AI engineering</p>
-                <button class="main__btn"><a href="#">GitHub</a></button>
+                <button class="main__btn"><a href="https://www.github.com/chocolatevanille" target="_blank">GitHub</a></button>
             </div>
         </div>
       </div>
@@ -80,7 +80,7 @@
                 title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
                 encrypted-media; gyroscope; picture-in-picture; web-share" 
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen id="godmaster-video"></iframe>
-                <button class="projects__btn" id="godmaster-button"><a href="#">GitHub</a></button>
+                <button class="projects__btn" id="godmaster-button"><a href="https://github.com/chocolatevanille/GodmasterHelper" target="_blank">GitHub</a></button>
             </div>
             <div class="projects__card" id="portfolio-card">
                 <h2>Portfolio Website</h2>
@@ -90,13 +90,14 @@
                 </p>
                 <p>
                     I learned how to create an attractive and functional portfolio website using a combination of CSS, HTML,
-                    and JS, make it mobile-friendly with variable object sizes and a dropdown menu, style 
-                    beautiful divs and buttons, have buttons wipe to another background color on hover, expand elements 
+                    and JS, make it mobile-friendly with variable object sizes and a dropdown menu that replaces the standard navbar, 
+                    make the mobile dropdown menu close upon selecting an option, make the navbar element currently displayed highlight,
+                    style beautiful divs and buttons, have buttons wipe to another background color on hover, expand elements 
                     on hover, embed images and YouTube videos, implement smooth scrolling, create a detailed footer, 
                     position elements in CSS and HTML with best practices, provide download and external links in buttons, 
                     and import icons from FontAwesome.
                 </p>
-                <button class="projects__btn" id="portfolio-button"><a href="#">GitHub</a></button>
+                <button class="projects__btn" id="portfolio-button"><a href="https://github.com/chocolatevanille/chocolatevanille.github.io" target="_blank">GitHub</a></button>
             </div>
             <div class="projects__card" id="recipes-card">
                 <h2>Recipes</h2>
@@ -115,7 +116,7 @@
                 title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
                 encrypted-media; gyroscope; picture-in-picture; web-share" 
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen id="recipes-video"></iframe>
-                <button class="projects__btn" id="recipes-button"><a href="#">GitHub</a></button>
+                <button class="projects__btn" id="recipes-button"><a href="https://github.com/chocolatevanille/Recipes" target="_blank">GitHub</a></button>
                 <p id="recipes-note">
                     Please note: I use "I" here despite this being a group project because I did 
                     all of the work. I do not mean most of the work. I mean literally, all of it. I envisioned the 
@@ -145,32 +146,37 @@
                     width = "400">
                 </div>
                 <div class="double" id="grid-buttons">
-                    <button class="projects__btn" id="pokemonexchange-live-button"><a href="#">Live</a></button>
-                    <button class="projects__btn" id="pokemonexchange-github-button"><a href="#">GitHub</a></button>
+                    <button class="projects__btn" id="pokemonexchange-live-button"><a href="https://old.reddit.com/r/PokemonExchange" target="_blank">Live</a></button>
+                    <button class="projects__btn" id="pokemonexchange-github-button"><a href="https://github.com/PokemonExchange/Minimalunimiunalism" target="_blank">GitHub</a></button>
                 </div>
             </div>
         </div>
        </div>
 
        <!-- Contact Section -->
-       <div class="main" id="contact">
+
+      <div class="main" id="sign-up">
         <div class="main__container">
-            <div class="main__content">
-                <h1>Contact Me</h1>
-                <h2>I Am Open To All Offers</h2>
-                <p>Willing to relocate</p>
-                <button class="main__btn"><a href="#">Email</a></button>
+          <div class="main__content">
+            <h1>Contact Me</h1>
+            <h2>I Am Open To All Offers</h2>
+            <p>Willing to relocate</p>
+            <p>Cell: (832) 361 9133</p>
+            <button class="main__btn"><a href="mailto:nbarroncs@gmail.com" target="_blank">Email</a></button>
+          </div>
+          <div class="main__img--container">
+            <div class="main__img--card" id="card-2">
+              <i class="fas fa-envelope"></i>
             </div>
-            <div class="main__img--container">
-                <div class="main__img--card" id="card-2"><i class="fa-solid fa-envelope"></i></div>
-            </div>
+          </div>
         </div>
       </div>
 
       <!-- Footer Section -->
     
         <div class="footer__container">
-            <!--
+            <!-- Commented out content supports link columns -->
+             <!--
             <div class="footer__links">
                 <div class="footer__link--wrapper">
                     <div class="footer__link--items">
@@ -213,25 +219,16 @@
                     </div>
                     <p class="website__rights">© 2024 Noël Barron. All rights reserved.</p>
                     <div class="social__icons">
-                        <a href="/" class="social__icon--link" target="_blank">
+                        <a href="https://www.linkedin.com/in/william-barron-37a3b392/" class="social__icon--link" target="_blank">
                             <i class="fab fa-linkedin"></i>
                         </a>
-                        <a href="/" class="social__icon--link" target="_blank">
+                        <a href="https://github.com/chocolatevanille" class="social__icon--link" target="_blank">
                             <i class="fab fa-github"></i>
                         </a>
                     </div>
                 </div>
             </section>
-        </div>
-
-
-      <!--  
-       <div class="footer__container">
-        <p id="copywrite">Copywrite Noël Barron 2024</p>
-        <p id="footer-github">GitHub</p>
-       </div> -->
-       
-
+        </div>  
      <script src="app.js"></script>
 </body>
 </html>
