@@ -40,6 +40,7 @@
         <div class="hero__container">
             <h1 class="hero__heading"><span>Noël Aurora Barron</span></h1>
             <p class="hero__description">Software Engineer</p>
+            <p class="education">B.S. Computer Science, Northwestern University, 2024</p>
             <button class="main__btn"><a href="#">Resume</a></button>
         </div>
       </div>
@@ -79,7 +80,7 @@
                 title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
                 encrypted-media; gyroscope; picture-in-picture; web-share" 
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen id="godmaster-video"></iframe>
-                <div class="projects__btn" id="godmaster-button"><button>GitHub</button></div>
+                <button class="projects__btn" id="godmaster-button"><a href="#">GitHub</a></button>
             </div>
             <div class="projects__card" id="portfolio-card">
                 <h2>Portfolio Website</h2>
@@ -88,12 +89,14 @@
                     You're on it! Hope you like it!
                 </p>
                 <p>
-                    I learned how to create an attractive and functional navbar using a combination of CSS, HTML,
-                    and JS, make it functional on mobile or otherwise small devices with a dropdown menu, style 
-                    beautiful divs and buttons, embed YouTube videos, implement smooth scrolling, expand elements 
-                    on hover, and create a detailed footer.
+                    I learned how to create an attractive and functional portfolio website using a combination of CSS, HTML,
+                    and JS, make it mobile-friendly with variable object sizes and a dropdown menu, style 
+                    beautiful divs and buttons, have buttons wipe to another background color on hover, expand elements 
+                    on hover, embed images and YouTube videos, implement smooth scrolling, create a detailed footer, 
+                    position elements in CSS and HTML with best practices, provide download and external links in buttons, 
+                    and import icons from FontAwesome.
                 </p>
-                <div class="projects__btn" id="portfolio-button"><button>GitHub</button></div>
+                <button class="projects__btn" id="portfolio-button"><a href="#">GitHub</a></button>
             </div>
             <div class="projects__card" id="recipes-card">
                 <h2>Recipes</h2>
@@ -112,7 +115,7 @@
                 title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
                 encrypted-media; gyroscope; picture-in-picture; web-share" 
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen id="recipes-video"></iframe>
-                <div class="projects__btn" id="recipes-button"><button>GitHub</button></div>
+                <button class="projects__btn" id="recipes-button"><a href="#">GitHub</a></button>
                 <p id="recipes-note">
                     Please note: I use "I" here despite this being a group project because I did 
                     all of the work. I do not mean most of the work. I mean literally, all of it. I envisioned the 
@@ -141,13 +144,93 @@
                     <img class="pe_ss" src="/imgs/pokemonexchange_nm.png" alt="Pokemon Exchange Dark Mode"
                     width = "400">
                 </div>
-                <div class="double">
-                    <div class="projects__btn" id="pokemonexchange-live-button"><button>Live</button></div>
-                    <div class="projects__btn" id="pokemonexchange-github-button"><button>GitHub</button></div>
+                <div class="double" id="grid-buttons">
+                    <button class="projects__btn" id="pokemonexchange-live-button"><a href="#">Live</a></button>
+                    <button class="projects__btn" id="pokemonexchange-github-button"><a href="#">GitHub</a></button>
                 </div>
             </div>
         </div>
        </div>
+
+       <!-- Contact Section -->
+       <div class="main" id="contact">
+        <div class="main__container">
+            <div class="main__content">
+                <h1>Contact Me</h1>
+                <h2>I Am Open To All Offers</h2>
+                <p>Willing to relocate</p>
+                <button class="main__btn"><a href="#">Email</a></button>
+            </div>
+            <div class="main__img--container">
+                <div class="main__img--card" id="card-2"><i class="fa-solid fa-envelope"></i></div>
+            </div>
+        </div>
+      </div>
+
+      <!-- Footer Section -->
+
+        <div class="footer__container">
+            <!--
+            <div class="footer__links">
+                <div class="footer__link--wrapper">
+                    <div class="footer__link--items">
+                        <h2>About Us</h2>
+                        <a href="/sign-up">How it works</a>
+                        <a href="/sign-up">Testimonials</a>
+                        <a href="/sign-up">Careers</a>
+                        <a href="/sign-up">Terms of Service</a>
+                    </div>
+                    <div class="footer__link--items">
+                        <h2>About Us</h2>
+                        <a href="/sign-up">How it works</a>
+                        <a href="/sign-up">Testimonials</a>
+                        <a href="/sign-up">Careers</a>
+                        <a href="/sign-up">Terms of Service</a>
+                    </div>
+                </div>
+                <div class="footer__link--wrapper">
+                    <div class="footer__link--items">
+                        <h2>About Us</h2>
+                        <a href="/sign-up">How it works</a>
+                        <a href="/sign-up">Testimonials</a>
+                        <a href="/sign-up">Careers</a>
+                        <a href="/sign-up">Terms of Service</a>
+                    </div>
+                    <div class="footer__link--items">
+                        <h2>About Us</h2>
+                        <a href="/sign-up">How it works</a>
+                        <a href="/sign-up">Testimonials</a>
+                        <a href="/sign-up">Careers</a>
+                        <a href="/sign-up">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        -->
+            <section class="social__media">
+                <div class="social__media--wrap">
+                    <div class="footer__logo">
+                        <a href="/" id="footer__logo">NOËL'S PORTFOLIO</a>
+                    </div>
+                    <p class="website__rights">© 2024 Noël Barron. All rights reserved.</p>
+                    <div class="social__icons">
+                        <a href="/" class="social__icon--link" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="/" class="social__icon--link" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+      <!--  
+       <div class="footer__container">
+        <p id="copywrite">Copywrite Noël Barron 2024</p>
+        <p id="footer-github">GitHub</p>
+       </div> -->
+       
 
      <script src="app.js"></script>
 </body>
