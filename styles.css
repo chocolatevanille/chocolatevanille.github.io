@@ -125,7 +125,7 @@
         opacity: 1;
         transition: all 0.5s ease;
         z-index: 99;
-        height: 60vh; /* 60% of the viewport */
+        height: 60vh; 
         font-size: 1.6rem;
     }
 
@@ -137,7 +137,7 @@
         width: 25px;
         height: 3px;
         margin: 5px auto;
-        transition: all 0.3s ease;
+        transition: all 0.3s ease-in-out;
         background: #fff;
     }
 
@@ -160,7 +160,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 80%;
+        height: 80px;
         width: 80%;
         margin: 0;
     }
@@ -252,7 +252,7 @@
 }
 
 .highlight {
-    border-bottom: 4px solid rgb(132,0,255)
+    border-bottom: 4px solid rgb(132,0,255);
 }
 
 @media screen and (max-width: 768px) {
@@ -616,8 +616,8 @@
     }
 
     #godmaster-video, #recipes-video {
-        width: 480px;
-        height: auto;
+        width: 400px;
+        height: 225px;
     }
 
     .pe_ss {
@@ -636,10 +636,15 @@
         font-size: 26px;
     }
 
-    #godmaster-video, #recipes-video {
+    #recipes-video {
         width: 300px;
         height: auto;
     }
+
+    #godmaster-video {
+        width: 300px;
+        height: 169px;
+    } 
 
     .pe_ss {
         width: 164px;
@@ -738,6 +743,7 @@
     color: #fff;
     text-decoration: none;
     margin-bottom: 0.5rem;
+    transition: 0.3 ease-out;
 }
 
 .footer__link--items a:hover {
