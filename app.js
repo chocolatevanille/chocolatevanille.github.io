@@ -16,6 +16,7 @@ const highlightMenu = () => {
     const elem = document.querySelector('.highlight');
     const homeMenu = document.querySelector('#home-page');
     const aboutMenu = document.querySelector('#about-page');
+    const offerMenu = document.querySelector('#offer-page');
     const projectsMenu = document.querySelector('#projects-page');
     let scrollPos = window.scrollY;
 
@@ -27,11 +28,16 @@ const highlightMenu = () => {
     } else if (window.innerWidth > 960 && scrollPos < 1400) {
         aboutMenu.classList.add('highlight');
         homeMenu.classList.remove('highlight');
+        offerMenu.classList.remove('highlight');
+        return
+    } else if (window.innerWidth > 960 && scrollPos < 2000) {
+        offerMenu.classList.add('highlight');
+        aboutMenu.classList.remove('highlight');
         projectsMenu.classList.remove('highlight');
         return
-    } else if (window.innerWidth > 960 && scrollPos < 4400) {
+    } else if (window.innerWidth > 960 && scrollPos < 5400) {
         projectsMenu.classList.add('highlight');
-        aboutMenu.classList.remove('highlight');
+        offerMenu.classList.remove('highlight');
         return
     }
 

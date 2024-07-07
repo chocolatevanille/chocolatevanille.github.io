@@ -24,6 +24,9 @@
               <a href="#about" class="navbar__links" id="about-page">About</a>
             </li>
             <li class="navbar__item">
+                <a href="#offer" class="navbar__links" id="offer-page">What I Offer</a>
+              </li>
+            <li class="navbar__item">
               <a href="#projects" class="navbar__links" id="projects-page">
                 Projects
               </a>
@@ -48,18 +51,84 @@
       </div>
 
       <!-- About Section -->
-      <div class="main" id="about">
-        <div class="main__container">
-            <div class="main__img--container">
-                <div class="main__img--card"><i class="fa-solid fa-code-branch"></i></div>
+      <div class="about-me" id="about">
+        <div class="about-me__container">
+            <div class="about-me__img--container">
+                <div class="about-me__img--card">
+                    <img class="selfie" src="/imgs/noelbarron.png" alt="Noël Barron">
+                </div>
             </div>
-            <div class="main__content">
-                <h1>What do I do?</h1>
-                <h2>I write code at a professional level</h2>
-                <p>Front-end design, back-end services, database management, AI engineering</p>
+            <div class="about-me__content">
+                <h1>About Me</h1>
+                <p>I am a new graduate from Northwestern University's McCormick 
+                    School of Engineering (June 2024). Originally from Washington D.C., my family moved 
+                    to Houston, Texas when I was only 3 years old, and we have called it home 
+                    ever since.  
+                </p>
+                <p>I love interating with new and diverse peoples, and value uplifting those around 
+                    me in whatever ways I can. When I had time I truly enjoyed running 
+                    <a href="http://www.youtube.com/@ChocolateVanille" target="_blank">a medium-sized YouTube channel</a>
+                    and a slightly larger <a href="http://www.twitch.tv/ChocolateVanille" target="_blank">Twitch</a> 
+                    where I met and entertained a variety of amazing people and regularly took part in 
+                    or helped manage/host charity events. 
+                </p>
+                <p>Whatever I do, I put 100% of myself into it. Apparently that's my ADHD but it's 
+                    helped me express myself and contribute to the communities I've been part of in 
+                    wonderful ways. In September 2019 I became president of Northwestern's Residence 
+                    Hall Association (RHA) and organized events that helped make life a little better for my fellow stressed 
+                    students. In 2021 I helped <a href="https://www.youtube.com/watch?v=f26btD3Xexo&t=1124s" target="_blank">
+                    host</a> and <a href="https://www.youtube.com/watch?v=OD7MMWqERqU&t=202s" 
+                    target="_blank">provided commentary</a> for the ModernDOOMSpeedrunning 
+                    '21 Marathon that raised over $9000(!!) for the American Foundation for Suicide Prevention. I 
+                    worked tech on their '22 Spring Marathon and 
+                    <a href="https://www.youtube.com/watch?v=fGZzLBehDm0" target="_blank">performed 
+                    myself in Slayers4Charity</a>, both raising well over $5k for Save the Children Fund and 
+                    Veterans 4 Child Rescue, respectively.
+                </p>
+            </div>
+        </div>
+        <div class="about-me__container-wide">
+            <div class="about-me__content">
+                <p>
+                    These experiences have made me fall in love with teamwork. While I am self-driven 
+                    and comfortable operating alone, I am most happy when I get to work with 
+                    other passionate people to design new and helpful programs for others. Equipped 
+                    with a fresh off the press degree and a variety of practical programming skills, 
+                    I'm looking to start a career of doing exactly that. 
+                </p>
+            </div>
+        </div>
+      </div>
+
+      <!-- Offer Section -->
+      <div class="offer" id="offer">
+        <div class="offer__container">
+            <div class="offer__content">
+                <h1>What Do I Offer?</h1>
+                <h2>Front-end design, back-end services, database management, AI engineering</h2>
+                <p>Proficient in a variety of popular programming languages including C, C++, Python, and Java</p>
+                <p>Cloud service experience with Microsoft Azure</p>
+                <p>Agile development methodology and iterative design</p>
+                <p>Practical experience with front-end interface design</p>
+                <p>Experience working with APIs</p>
+                <p>Knowledge of database best practices including with Azure's cloud services</p>
+                <p>Hands-on experience building AI technology with Azure AI Services</p>
+                <p>Clean, efficient, scalable, and readable coding practices</p>
+                <!--
+                <p>A history of valuable, high-level classes in one of the most competitive
+                    educational institutions in the country, i.e. AI Programming, Operating 
+                    Systems, Natural Language Processing, Programming Languages, Systems 
+                    Programming in Rust, Knowledge Representation and Reasoning, Human 
+                    Computer Interaction, Theory of Computation, and Game Design and 
+                    Development
+                </p> -->
+                <p>Important soft skills such as teamwork, communication, empathy, passion, and innovation</p>
                 <a href="https://github.com/chocolatevanille" target="_blank">
-                    <button class="main__btn"><span>GitHub</span></button>
+                    <button class="offer__btn"><span>GitHub</span></button>
                 </a>
+            </div>
+            <div class="offer__img--container">
+                <div class="offer__img--card"><i class="fa-solid fa-code-branch"></i></div>
             </div>
         </div>
       </div>
@@ -183,12 +252,13 @@
         <div class="main__container">
           <div class="main__content">
             <h1>Contact Me</h1>
-            <h2>I Am Open To All Offers</h2>
+            <h2>Let's connect!</h2>
             <p>Willing to relocate</p>
             <p>Cell: (832) 361 9133</p>
             <a href="mailto:nbarroncs@gmail.com" target="_blank">
                 <button class="main__btn"><span>Email</span></button>
             </a>
+            <p id="contact-subtext">Hearing all offers</p>
           </div>
           <div class="main__img--container">
             <div class="main__img--card" id="card-2">
