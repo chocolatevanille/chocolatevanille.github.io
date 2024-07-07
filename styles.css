@@ -639,7 +639,7 @@
     flex-direction: column;
     justify-content: center;
     color: #fff;
-    background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
+    background-image: linear-gradient(to right, #03001e, #7303c0, #ec38bc, #fdeff9);
 }
 
 .fa-code-branch, .fa-envelope {
