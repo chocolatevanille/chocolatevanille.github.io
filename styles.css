@@ -991,7 +991,10 @@
     justify-content: center;
     align-items: center;
     color: #fff;
-    background-image: linear-gradient(to right, #42275a, #734b6d);
+    background-image: 
+        radial-gradient(circle at 20% 40%, rgba(241, 93, 255, 0.3), transparent 40%),
+        radial-gradient(circle at 80% 60%, rgba(214, 109, 209, 0.2), transparent 30%),
+        linear-gradient(to right, #42275a, #734b6d);
     transition: 0.3s ease--in;
 }
 
@@ -1090,6 +1093,29 @@
 
 .projects__card button:hover {
     cursor: pointer;
+}
+
+#portfolio-card {
+    background: 
+        radial-gradient(circle at 46% 84%, rgba(241, 93, 255, 0.3), transparent 39%),
+        radial-gradient(circle at 13% 55%, rgba(214, 109, 209, 0.2), transparent 55%),
+        radial-gradient(circle at 80% 60%, rgba(241, 93, 255, 0.3), transparent 39%),
+        linear-gradient(to right, #734b6d, #42275a);
+}
+
+#recipes-card {
+    background: 
+        radial-gradient(circle at 23% 49%, rgba(241, 93, 255, 0.3), transparent 40%),
+        radial-gradient(circle at 67% 71%, rgba(214, 109, 209, 0.2), transparent 60%),
+        radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.7), transparent 20%),
+        linear-gradient(to right, #42275a, #734b6d);
+}
+
+#pokemonexchange-card {
+    background: 
+        radial-gradient(circle at 43% 30%, rgba(238, 84, 252, 0.3), transparent 40%),
+        radial-gradient(circle at 80% 71%, rgba(255, 162, 250, 0.2), transparent 60%),
+        linear-gradient(to right, #734b6d, #42275a);
 }
 
 #godmaster-video, #recipes-video {
