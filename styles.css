@@ -552,66 +552,11 @@
 }
 
 .projects__card p {
-    text-align: center;
+    text-align: left;
     margin-top: 18px;
     font-size: 16px;
     padding: 0px 48px;
 }
-
-/*
-
-.main__btn {
-    font-size: 1.8rem;
-    background: #8E2DE2;  /* fallback for old browsers 
-    background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 
-    background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ 
-    padding: 20px 60px;
-    border: none;
-    border-radius: 4px;
-    margin-top: 2rem;
-    cursor: pointer;
-    position: relative;
-    transition: all 0.5s ease;
-    outline: none;
-    color: #fff;
-}
-
-.main__btn::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-radius: 4px;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to right, #8E2DE2, #4A00E0);
-    transition: opacity 0.5s ease;
-    opacity: 0;
-    z-index: 1;
-}
-
-.main__btn span {
-    position: relative;
-    z-index: 2; 
-    display: inline-block;
-    pointer-events: none; /* Ensure pointer events pass through to the button 
-}
-
-.main__btn:hover::before {
-    opacity: 1;
-    box-shadow: 3px 3px 2px 3px rgba(76, 6, 90, 0.3);
-}
-
-.main__btn a {
-    position: relative;
-    z-index: 2;
-    color: #fff;
-    text-decoration: none;
-}
-
-.main__btn:hover:after {
-    width: 100%;
-} */
 
 .projects__btn {
     margin-top: 16px;
@@ -693,10 +638,6 @@
 
 .pe_ss {
     padding: 18px 14px 14px;
-}
-
-.projects__card p {
-    text-align: left;
 }
 
 @media screen and (max-width: 960px) {
