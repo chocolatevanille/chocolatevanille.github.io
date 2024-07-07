@@ -6,6 +6,8 @@
     scroll-behavior: smooth;
 }
 
+/* Navbar CSS */
+
 .navbar {
     background: #131313;
     height: 80px;
@@ -384,6 +386,15 @@
     font-weight: 500;
 }
 
+.about-me__content a {
+    color: #FF69B4;
+    text-decoration: none;
+}
+
+.about-me__content a:visited {
+    color: #FFC0CB;
+}
+
 .selfie {
     width: 400px;
     height: 400px;
@@ -723,8 +734,6 @@
         margin: 2.5rem 0;
     }
 }
-
-
 
 .main {
     background-color: #131313;
@@ -1278,6 +1287,14 @@
     justify-content: space-between;
     align-items: center;
     width: 120px;
+}
+
+.social__media a {
+    color: #fff;
+}
+
+.social__media a:visited {
+    color: #fff;
 }
 
 .website__rights {
