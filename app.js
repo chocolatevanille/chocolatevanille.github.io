@@ -25,12 +25,12 @@ const highlightMenu = () => {
         homeMenu.classList.add('highlight');
         aboutMenu.classList.remove('highlight');
         return
-    } else if (window.innerWidth > 960 && scrollPos < 1400) {
+    } else if (window.innerWidth > 960 && scrollPos < 1300) {
         aboutMenu.classList.add('highlight');
         homeMenu.classList.remove('highlight');
         offerMenu.classList.remove('highlight');
         return
-    } else if (window.innerWidth > 960 && scrollPos < 2000) {
+    } else if (window.innerWidth > 960 && scrollPos < 2200) {
         offerMenu.classList.add('highlight');
         aboutMenu.classList.remove('highlight');
         projectsMenu.classList.remove('highlight');

@@ -213,6 +213,7 @@
     font-size: 100px;
     margin-bottom: 24px;
     color: #fff;
+    z-index: 2;
 }
 
 /* 'colors' in landing page */
@@ -237,6 +238,7 @@
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
+    z-index: 2;
 }
 
 .education {
@@ -249,6 +251,68 @@
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
+    z-index: 2;
+}
+
+.courses {
+    margin-top: 30px;
+    font-size: 18px;
+    color: #fff;
+    opacity: 60%;
+}
+
+.background-text-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; /* Ensure the background text is behind the main content */
+    overflow: hidden;
+}
+
+.faded-text {
+    position: absolute;
+    font-size: 3rem; /* Adjust size as needed */
+    color: rgba(92, 92, 92, 0.4); /* Faded effect with low opacity */
+    transform: rotate(-45deg); /* Optional rotation for styling */
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+/* Position the faded text elements at different locations */
+.faded-text:nth-child(1) {
+    top: 12%;
+    left: 24%;
+}
+
+.faded-text:nth-child(2) {
+    top: 50%;
+    left: 60%;
+}
+
+.faded-text:nth-child(3) {
+    top: 20%;
+    left: 45%;
+}
+
+.faded-text:nth-child(4) {
+    top: 50%;
+    left: 60%;
+}
+
+.faded-text:nth-child(5) {
+    top: 50%;
+    left: 60%;
+}
+
+.faded-text:nth-child(6) {
+    top: 50%;
+    left: 60%;
+}
+
+.faded-text:nth-child(7) {
+    top: 50%;
+    left: 0%;
 }
 
 .highlight {
