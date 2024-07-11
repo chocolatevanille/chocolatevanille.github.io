@@ -1185,12 +1185,8 @@
 
 @media screen and (max-width: 479px) {
     .projects__card {
-        height: 900px;
+        height: 1020px;
         width: 320px;
-    }
-
-    #recipes-card, #godmaster-card {
-        height: 980px;
     }
 
     #godmaster-video, #recipes-video {
@@ -1210,7 +1206,7 @@
 
 @media screen and (max-width: 320px) {
     .projects__card {
-        height: 900px;
+        height: 1020px;
         width: 200px;
     }
 
