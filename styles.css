@@ -983,7 +983,7 @@
 
 .projects__card {
     margin: 10px;
-    height: 720px;
+    height: 760px;
     width: 900px;
     border-radius: 4px;
     display: flex;
@@ -1029,6 +1029,15 @@
     font-size: 16px;
     padding: 0px 48px;
     font-weight: 500;
+}
+
+.projects a {
+    color: #FF69B4;
+    text-decoration: none;
+}
+
+.projects a:visited {
+    color: #FFC0CB;
 }
 
 .projects__btn {

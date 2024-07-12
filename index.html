@@ -54,7 +54,7 @@
             <h1 class="hero__heading"><span>Noël Aurora Barron</span></h1>
             <p class="hero__description">Software Engineer</p>
             <p class="education">B.S. Computer Science, Northwestern University, 2024</p>
-            <p class="courses">AI Programming, Data Structure And Management, Foundations Of Optimization, 
+            <p class="courses">High level coursework in AI Programming, Foundations Of Optimization, 
                 Game Design and Development, Human Computer Interaction, Knowledge Representation and Reasoning, 
                 Multivariable Differential Calculus, Natural Language Processing, Operating Systems, 
                 Practicum Intelligent Info Systems, Programming Languages, Systems Programming in Rust, 
@@ -121,15 +121,20 @@
         <div class="offer__container">
             <div class="offer__content">
                 <h1>What Do I Offer?</h1>
-                <h2>Front-end design, back-end services, database management, AI engineering</h2>
-                <p>Proficient in a variety of popular programming languages including C, C++, Python, and Java</p>
-                <p>Cloud service experience with Microsoft Azure</p>
-                <p>Agile development methodology and iterative design</p>
-                <p>Practical experience with front-end interface design</p>
-                <p>Experience working with APIs</p>
+                <h2>AI Engineering, Machine Learning, Object-Oriented Programming, UI/UX Design</h2>
+                <p>Microsoft Certified in NLP and AI Document Intelligence solutions using Azure AI Services</p>
+                <p>CS degree specializing in NLP, KRR, and AI Programming from a Top 10 University in the United States</p>
+                <p>Proficiency in a variety of popular programming languages including C, C++, Python, and Java</p>
+                <p>Hands-on expertise in crafting dynamic and user-friendly front-end interfaces</p>
+                <p>Agile development methodology and iterative design experience, including weekly prototyping 
+                    and testing in design sprints</p>
+                <p>Key experience operating AI procedures using API calls and SDKs</p>
                 <p>Knowledge of database best practices including with Azure's cloud services</p>
-                <p>Hands-on experience building AI technology with Azure AI Services</p>
-                <p>Clean, efficient, scalable, and readable coding practices</p>
+                <p>Proficiency in writing readable, efficient, and scalable code</p>
+                <p>An unwavering passion for continuous personal growth and learning, exercised through self-teaching 
+                    complex frameworks such as PyTorch, experimenting with industry-leading technology like Docker, 
+                    or exploring Microsoft's Learning Paths
+                </p>
                 <!--
                 <p>A history of valuable, high-level classes in one of the most competitive
                     educational institutions in the country, i.e. AI Programming, Operating 
@@ -137,7 +142,7 @@
                     Programming in Rust, Knowledge Representation and Reasoning, Human 
                     Computer Interaction, Theory of Computation, and Game Design and 
                     Development
-                </p> -->
+                </p> Removed for brevity-->
                 <p>Important soft skills such as teamwork, communication, empathy, passion, and innovation</p>
                 <a href="https://github.com/chocolatevanille" target="_blank">
                     <button class="offer__btn"><span>GitHub</span></button>
@@ -153,6 +158,37 @@
        <div class="projects" id="projects">
         <h1>My Projects</h1>
         <div class="projects__wrapper">
+            <div class="projects__card" id="recipes-card">
+                <h2>Recipes</h2>
+                <h3>Knowledge Representation and Reasoning (KRR) AI in Python</h3>
+                <p>
+                    Challenged with crafting a KRR AI solution from scratch for the course Knowledge Representation and 
+                    Reasoning, I designed an AI ontology to provide ingredient substitutions (based around food 
+                    preference and allergens) for a group of meal recipes, securing an A in the course.     
+                </p>
+                <p>
+                    I did this by first creating a scalable KRR database in Python, representing shared qualities 
+                    of elements via genLs. Critically this program does not simply assign elements the qualities of their 
+                    parent genL; instances inherit all appropriate qualities via backward chaining. Likewise the program 
+                    employs forward chaining and reasoning to determine the qualities of ingredients in the recipes and 
+                    provide appropriate substitutions.
+                </p> 
+                <iframe width="640" height="360" src="https://www.youtube.com/embed/d10Gk_kbYdo?si=SpxyLOpuGi0ywpqj" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen id="recipes-video"></iframe>
+                <a href="https://github.com/chocolatevanille/Recipes" target="_blank">
+                    <button class="projects__btn" id="recipes-button">
+                        <span>GitHub</span>
+                    </button>
+                </a>
+                <p id="recipes-note">
+                    Please note: I use "I" here despite this being a group project because I did 
+                    all of the work. I do not mean most of the work. I mean literally, all of it. I envisioned the 
+                    premise, wrote every line of code (as evidenced by GitHub history), recorded the demo,
+                    and wrote the final project report. If the team slacks, I am willing to put in the work.
+                </p> 
+            </div>
             <div class="projects__card" id="godmaster-card">
                 <h2>GodmasterHelper</h2>
                 <h3>Object Oriented Programming</h3>
@@ -187,13 +223,18 @@
                     You're on it! Hope you like it!
                 </p>
                 <p>
-                    I created an attractive and functional portfolio website using a combination of CSS, HTML,
-                    and JS and made it mobile-friendly with variable object sizes and a dropdown menu that replaces the standard navbar when 
-                    the screen is too narrow. For usability, that dropdown menu closes upon selecting an option, and on 
-                    desktop the current navbar element highlights. I made sure to style unique and beautiful divs and buttons, 
-                    the buttons wiping to another background color or expanding on hover. For convenience, images and YouTube videos 
-                    are embedded and smooth scrolling implemented. I positioned elements in CSS and HTML with best practices, 
-                    and imported icons from FontAwesome.
+                    Faced with the inadequacy of GitHub and a resume to describe myself to potential employers, I 
+                    resolved to design a portfolio website. The primary concern was usability; no one 
+                    is impressed by a non-functional or confusing website. Therefore, using a combination of CSS, HTML,
+                    and JS I set out to make it both attractive and highly functional, with an emphasis on mobile-friendly 
+                    design using variable object sizes and transitioning the navigation bar to an expandable dropdown 
+                    menu. That dropdown menu closes upon selecting an option, ensuring it doesn't overstay its welcome, and on 
+                    desktop the current navbar element highlights to display where the user is on the webpage. I made sure to 
+                    style unique and beautiful divs and buttons, including personal touches such as a unique, somewhat transparent 
+                    wipe effect that masks a subtle but effective gradient flip on hover. For convenience, YouTube videos 
+                    are embedded and smooth scrolling implemented. For scalability and potential changes down the road, I 
+                    positioned elements in CSS and HTML with best practices, and imported icons from FontAwesome, a free resource for 
+                    many identifiable images and logos.
                 </p>
                 <a href="https://github.com/chocolatevanille/chocolatevanille.github.io" target="_blank">
                     <button class="projects__btn" id="portfolio-button">
@@ -201,49 +242,24 @@
                     </button>
                 </a>
             </div>
-            <div class="projects__card" id="recipes-card">
-                <h2>Recipes</h2>
-                <h3>Knowledge, Representation, and Reasoning (KRR) AI in Python</h3>
-                <p>
-                    This executable uses an AI ontology to provide ingredient substitutions (based around 
-                    food preference and allergens) for a group of meal recipes.     
-                </p>
-                <p>
-                    I created a scalable KRR database in Python, representing shared qualities 
-                    of elements via genLs; added elements (represented by isA statements) to the database 
-                    and had them inherit genL qualities via backward chaining; and used forward 
-                    chaining and reasoning to determine the qualities of ingredients in the recipes.
-                </p> 
-                <iframe width="640" height="360" src="https://www.youtube.com/embed/d10Gk_kbYdo?si=SpxyLOpuGi0ywpqj" 
-                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
-                encrypted-media; gyroscope; picture-in-picture; web-share" 
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen id="recipes-video"></iframe>
-                <a href="https://github.com/chocolatevanille/Recipes" target="_blank">
-                    <button class="projects__btn" id="recipes-button">
-                        <span>GitHub</span>
-                    </button>
-                </a>
-                <p id="recipes-note">
-                    Please note: I use "I" here despite this being a group project because I did 
-                    all of the work. I do not mean most of the work. I mean literally, all of it. I envisioned the 
-                    premise, wrote every line of code (as evidenced by GitHub history), recorded the demo,
-                    and wrote the final project report. If the team slacks, I am willing to put in the work.
-                </p> 
-            </div>
             <div class="projects__card" id="pokemonexchange-card">
-                <h2>/r/PokemonExchange CSS</h2>
+                <h2>r/PokemonExchange CSS</h2>
                 <h3>CSS on Reddit!</h3>
                 <p>
                     Reddit used to rely on moderators to style each individual subreddit, allowing for 
                     a creative and diverse array of forums. From 2016 to 2019 I styled the subreddit 
-                    /r/PokemonExchange, a medium sized community which at the time had several thousand 
+                    r/PokemonExchange, a medium sized community which at the time had several thousand 
                     viewers per month.
                 </p>
                 <p>
-                    I analyzed CSS elements; injected CSS code to modify tables, links, 
-                    headers, menus, lists, and sprites; customized colors; applied hover effects; smoothed 
-                    borders; and designed and supported a fully functional dark mode. The CSS has had 
-                    changes in banner and wiki images only since 2019, so it is still live! 
+                    During this time I was also the head moderator of the community, so functionally I had creative control. 
+                    My partner <a href="https://roberto-medina.eu/">Dr. Roberto Medina</a> and I had fun exploring the different avenues to individualize our 
+                    community. We analyzed various elements of the CSS, and once comfortable, began our modifications. 
+                    We injected CSS code to modify tables, links, headers, menus, lists, and sprites; customized colors; 
+                    applied hover effects; smoothed borders; and designed and supported a fully functional dark mode. This 
+                    was one of my first projects out in "the real world", and I'm very thankful for the experience.  
+                    The CSS has had changes in banner and wiki images only since 2019, so our creation is still live! Accessing 
+                    it requires the "old" prefix in place of "www" when navigating Reddit.
                 </p>
                 <div class="double">
                     <img class="pe_ss" src="/imgs/pokemonexchange.png" alt="Pokemon Exchange Light Mode"
