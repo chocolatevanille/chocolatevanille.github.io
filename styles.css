@@ -1194,7 +1194,7 @@
 
 @media screen and (max-width: 479px) {
     .projects__card {
-        height: 1020px;
+        height: 1180px;
         width: 320px;
     }
 
@@ -1215,7 +1215,7 @@
 
 @media screen and (max-width: 320px) {
     .projects__card {
-        height: 1020px;
+        height: 1220px;
         width: 200px;
     }
 
