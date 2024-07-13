@@ -2,7 +2,7 @@ const menu = document.querySelector('#mobile-menu')
 const menuLinks = document.querySelector('.navbar__menu')
 const navLogo = document.querySelector('#navbar__logo')
 
-// Display Mobile Menu
+// displays mobile menu
 const mobileMenu = () => {
     console.log('Mobile menu toggled'); // Add this line
     menu.classList.toggle('is-active');
@@ -11,7 +11,7 @@ const mobileMenu = () => {
 
 menu.addEventListener('click', mobileMenu);
 
-// Show active menu when scrolling
+// shows active menu when scrolling
 const highlightMenu = () => {
     const elem = document.querySelector('.highlight');
     const homeMenu = document.querySelector('#home-page');
@@ -49,7 +49,7 @@ const highlightMenu = () => {
 window.addEventListener('scroll', highlightMenu);
 window.addEventListener('click', highlightMenu);
 
-// Close mobile menu when clicking on a menu item
+// closes mobile menu when clicking on a menu item
 const hideMobileMenu = () => {
     const menuBars = document.querySelector('.is-active')
     if(window.innerWidth <= 960 && menuBars) {

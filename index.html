@@ -162,11 +162,26 @@
                 <h2>YouTube Sentiment Analysis (Current Project)</h2>
                 <h3>Natural Language Processing using PyTorch</h3>
                 <p>
-                    Ever since YouTube hid the Dislike feature from viewers, users have tried other ways to assess the general 
-                    sentiment of the community when opening videos. This program will provide an alternative by determining whether 
-                    the comments are generally positive, negative, or neutral.     
+                    Ever since YouTube removed the Dislike feature, users have sought alternative ways to gauge community sentiment on videos. 
+                    This project aims to fill that gap by analyzing comments to determine whether they are positive, negative, or neutral.    
                 </p>
-                <p>This project is in production. Status: Model built. Next step: Training. You can track my progress and view the source code by going to the GitHub page below.
+                <p>
+                    Currently in development, the foundational AI engineering is complete. Leveraging Docker, JupyterLab, and 
+                    extensive research on PyTorch, I trained a BERT model for sentiment analysis. Using BertForSequenceClassification 
+                    from bert-base-uncased, a leading model in NLP, I trained it on 4000 Amazon reviews of movies and TV shows, with 
+                    1000 for validation. Achieving acceptable performance metrics—training loss of 0.54 and validation accuracy of 0.707 
+                    on the final epoch—I aim to explore larger datasets for improved results.
+                </p> 
+                <p>
+                    This project offered me an opportunity to work hands-on with and learn about the inner systems of AI engineering, such as 
+                    tokenizing (special tokens, max length purpose, truncation), input ids (encoding, padding), and attention masks, Pandas.DataFrame, torch 
+                    utilities such as DataLoader, Dataset, TensorDataset, RandomSampler, and SequentialSampler, 
+                    and practical training elements such as learning rates, optimizing, epochs, schedulers, backwards propagation, loss 
+                    calculation, and validation accuracy calculation. This has been a rewarding experience so far. 
+                </p> 
+                <p>
+                    Moving forward, the next phase involves integrating the YouTube API, allowing users to specify videos for sentiment 
+                    analysis based on scraped comments. 
                 </p> 
                 <a href="https://github.com/chocolatevanille/Sentiment-Analysis" target="_blank">
                     <button class="projects__btn" id="sentiment-button">
@@ -178,16 +193,16 @@
                 <h2>Recipes</h2>
                 <h3>Knowledge Representation and Reasoning (KRR) AI in Python</h3>
                 <p>
-                    Challenged with crafting a KRR AI solution from scratch for the course Knowledge Representation and 
-                    Reasoning, I designed an AI ontology to provide ingredient substitutions (based around food 
-                    preference and allergens) for a group of meal recipes, securing an A in the course.     
+                    Challenged with creating a Knowledge Representation and Reasoning (KRR) AI solution, I developed an 
+                    AI ontology tailored for recommending ingredient substitutions based on food preferences and allergens 
+                    within a collection of meal recipes, earning an A in the course.     
                 </p>
                 <p>
-                    I did this by first creating a scalable KRR database in Python, representing shared qualities 
-                    of elements via genLs. Critically this program does not simply assign elements the qualities of their 
-                    parent genL; instances inherit all appropriate qualities via backward chaining. Likewise the program 
-                    employs forward chaining and reasoning to determine the qualities of ingredients in the recipes and 
-                    provide appropriate substitutions.
+                    I began by constructing a scalable KRR database in Python, utilizing genLs to represent shared 
+                    attributes of elements. Importantly, my approach diverged from simply assigning attributes based 
+                    on parent genLs; instead, instances inherited all relevant attributes through backward chaining. 
+                    Additionally, the program employed forward chaining and reasoning to deduce ingredient attributes 
+                    within recipes and suggest suitable substitutions.
                 </p> 
                 <iframe width="640" height="360" src="https://www.youtube.com/embed/d10Gk_kbYdo?si=SpxyLOpuGi0ywpqj" 
                 title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
@@ -199,28 +214,34 @@
                     </button>
                 </a>
                 <p id="recipes-note">
-                    Please note: I use "I" here despite this being a group project because I did 
-                    all of the work. I do not mean most of the work. I mean literally, all of it. I envisioned the 
-                    premise, wrote every line of code (as evidenced by GitHub history), recorded the demo,
-                    and wrote the final project report. If the team slacks, I am willing to put in the work.
+                    Please note: Although this was a group project, I take full ownership as I independently 
+                    handled every aspect of it. From envisioning the premise to writing every line of code 
+                    (as documented in the GitHub history), recording the demo, and crafting the final project 
+                    report—every task was my responsibility. In instances where team effort was lacking, I 
+                    willingly stepped up to ensure completion.
                 </p> 
             </div>
             <div class="projects__card" id="godmaster-card">
                 <h2>GodmasterHelper</h2>
                 <h3>Object Oriented Programming</h3>
                 <p>
-                    This executable allows players of the hit video game Hollow Knight to track their 
-                    progress and abilities in the Godmaster DLC.
+                    This executable enhances the gaming experience for Hollow Knight players by tracking their progress 
+                    and abilities in the Godmaster DLC.
                 </p>
                 <p>
-                    Using Python's class system, I assigned information to each boss in the DLC, such as name, 
-                    pantheons, and some numbers data. From there, I designed a UI that would allow for user input 
-                    and managed the details of how many times they died to each boss in a way that gave players 
-                    info on what they needed to work on to improve. I made sure data could be stored in files and 
-                    loaded as needed. Once base functionality was implemented, I designed a full GUI in Python complete 
-                    with buttons, drop-down menus, images, pop-up windows, and more, with the goal of enhancing user 
-                    experience, particularly in usability. Finally, I exported the program as an executable and 
-                    published it on GitHub.
+                    Utilizing Python's class system, I organized information for each boss in the DLC, including names, 
+                    pantheons, and numerical data. I then developed a user-friendly UI that allows players to input 
+                    their gameplay data, tracking the number of deaths to each boss to provide insights for improvement. 
+                    To ensure data persistence, I implemented file storage and retrieval functionalities.
+                </p>
+                <p>
+                    After establishing core functionality, I expanded the project to include a comprehensive GUI in 
+                    Python. This interface features buttons, drop-down menus, images, and pop-up windows designed 
+                    to optimize usability and enhance the overall user experience.
+                </p>
+                <p>
+                    The finalized program was exported as an executable and is now available on GitHub for the Hollow 
+                    Knight community to utilize and enjoy.
                 </p>
                 <iframe width="640" height="360" src="https://www.youtube.com/embed/Y7abImabS2Q?si=DWM0GJxyLIh9xjSA" 
                 title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
@@ -239,18 +260,25 @@
                     You're on it! Hope you like it!
                 </p>
                 <p>
-                    Faced with the inadequacy of GitHub and a resume to describe myself to potential employers, I 
-                    resolved to design a portfolio website. The primary concern was usability; no one 
-                    is impressed by a non-functional or confusing website. Therefore, using a combination of CSS, HTML,
-                    and JS I set out to make it both attractive and highly functional, with an emphasis on mobile-friendly 
-                    design using variable object sizes and transitioning the navigation bar to an expandable dropdown 
-                    menu. That dropdown menu closes upon selecting an option, ensuring it doesn't overstay its welcome, and on 
-                    desktop the current navbar element highlights to display where the user is on the webpage. I made sure to 
-                    style unique and beautiful divs and buttons, including personal touches such as a unique, somewhat transparent 
-                    wipe effect that masks a subtle but effective gradient flip on hover. For convenience, YouTube videos 
-                    are embedded and smooth scrolling implemented. For scalability and potential changes down the road, I 
-                    positioned elements in CSS and HTML with best practices, and imported icons from FontAwesome, a free resource for 
-                    many identifiable images and logos.
+                    Recognizing the limitations of GitHub and aiming to impress potential employers, I took on 
+                    the challenge of creating a portfolio website. My primary goal was exceptional usability, 
+                    ensuring visitors encounter a functional and intuitive interface. Using CSS, HTML, and JavaScript, 
+                    I crafted a visually appealing and highly functional website, prioritizing mobile-friendly 
+                    design with variable object sizes and a streamlined navigation bar that transitions into an 
+                    expandable dropdown menu.
+                </p>
+                <p>
+                    To enhance user experience, the dropdown menu closes automatically upon selection, 
+                    maintaining a clean interface. On desktop, the navigation bar highlights the current page 
+                    location for easy navigation. I designed unique and aesthetically pleasing divs and buttons, 
+                    incorporating personal touches such as a subtle gradient flip effect on buttons, revealed through a 
+                    transparent wipe on hover.
+                </p>
+                <p>
+                    The website features embedded YouTube videos and smooth scrolling for seamless interaction. 
+                    For future scalability and flexibility, I adhered to best practices in CSS and HTML for 
+                    element positioning, implemented classes liberally, and utilized FontAwesome for 
+                    high-quality, free icons and logos.
                 </p>
                 <a href="https://github.com/chocolatevanille/chocolatevanille.github.io" target="_blank">
                     <button class="projects__btn" id="portfolio-button">
@@ -262,20 +290,21 @@
                 <h2>r/PokemonExchange CSS</h2>
                 <h3>CSS on Reddit!</h3>
                 <p>
-                    Reddit used to rely on moderators to style each individual subreddit, allowing for 
-                    a creative and diverse array of forums. From 2016 to 2019 I styled the subreddit 
-                    r/PokemonExchange, a medium sized community which at the time had several thousand 
-                    viewers per month.
+                    From 2016 to 2019, I served as both head moderator and stylist for the r/PokemonExchange subreddit, 
+                    a thriving community with thousands of monthly visitors. This role provided me with the 
+                    opportunity to exercise creative control over the subreddit's appearance and functionality.
                 </p>
                 <p>
-                    During this time I was also the head moderator of the community, so functionally I had creative control. 
-                    My partner <a href="https://roberto-medina.eu/">Dr. Roberto Medina</a> and I had fun exploring the different avenues to individualize our 
-                    community. We analyzed various elements of the CSS, and once comfortable, began our modifications. 
-                    We injected CSS code to modify tables, links, headers, menus, lists, and sprites; customized colors; 
-                    applied hover effects; smoothed borders; and designed and supported a fully functional dark mode. This 
-                    was one of my first projects out in "the real world", and I'm very thankful for the experience.  
-                    The CSS has had changes in banner and wiki images only since 2019, so our creation is still live! Accessing 
-                    it requires the "old" prefix in place of "www" when navigating Reddit.
+                    Partnering with <a href="https://roberto-medina.eu/">Dr. Roberto Medina</a>, we explored various CSS elements to personalize our community. 
+                    After analyzing and familiarizing ourselves with CSS fundamentals, we implemented extensive 
+                    modifications. Our enhancements included customizing tables, links, headers, menus, lists, and 
+                    sprites, integrating hover effects, refining borders, and implementing a fully functional dark mode. 
+                    These efforts marked one of my early real-world projects, which I deeply value for the experience gained.
+                </p>
+                <p>
+                    Our CSS modifications have remained largely unchanged since 2019, with updates limited to banner and 
+                    wiki images. The subreddit's customized design is still active today, accessible by replacing 
+                    "www" with "old" in the Reddit URL.
                 </p>
                 <div class="double">
                     <img class="pe_ss" src="/imgs/pokemonexchange.png" alt="Pokemon Exchange Light Mode"

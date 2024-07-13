@@ -983,7 +983,7 @@
 
 .projects__card {
     margin: 10px;
-    height: 760px;
+    height: 820px;
     width: 900px;
     border-radius: 4px;
     display: flex;
@@ -1116,7 +1116,7 @@
     background: 
         radial-gradient(circle at 23% 49%, rgba(241, 93, 255, 0.3), transparent 40%),
         radial-gradient(circle at 67% 71%, rgba(214, 109, 209, 0.2), transparent 60%),
-        radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.7), transparent 20%),
+        radial-gradient(circle at 50% 50%, rgba(229, 123, 255, 0.7), transparent 60%),
         linear-gradient(to right, #42275a, #734b6d);
 }
 
@@ -1147,7 +1147,7 @@
 
 @media screen and (max-width: 960px) {
     .projects__card {
-        height: 700px;
+        height: 800px;
         width: 600px;
     }
 
@@ -1168,7 +1168,7 @@
 
 @media screen and (max-width: 640px) {
     .projects__card {
-        height: 900px;
+        height: 1120px;
         width: 400px;
     }
 
@@ -1194,7 +1194,7 @@
 
 @media screen and (max-width: 479px) {
     .projects__card {
-        height: 1180px;
+        height: 1400px;
         width: 320px;
     }
 
@@ -1215,7 +1215,7 @@
 
 @media screen and (max-width: 320px) {
     .projects__card {
-        height: 1220px;
+        height: 3000px;
         width: 200px;
     }
 
@@ -1234,6 +1234,10 @@
     }
     .projects__card h2 {
         font-size: 24px;
+    }
+
+    .projects__card p {
+        font-size: 12px;
     }
 }
 
