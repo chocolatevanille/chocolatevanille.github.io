@@ -159,15 +159,14 @@
         <h1>My Projects</h1>
         <div class="projects__wrapper">
             <div class="projects__card" id="sentiment-card">
-                <h2>YouTube Sentiment Analysis (Current Project)</h2>
+                <h2>YouTube Sentiment Analysis</h2>
                 <h3>Natural Language Processing using PyTorch</h3>
                 <p>
                     Ever since YouTube removed the Dislike feature, users have sought alternative ways to gauge community sentiment on videos. 
                     This project aims to fill that gap by analyzing comments to determine whether they are positive, negative, or neutral.    
                 </p>
                 <p>
-                    Currently in development, the foundational AI engineering is complete. Leveraging Docker, JupyterLab, and 
-                    extensive research on PyTorch, I trained a BERT model for sentiment analysis. Using BertForSequenceClassification 
+                    Leveraging Docker, JupyterLab, and extensive research on PyTorch, I trained a BERT model for sentiment analysis. Using BertForSequenceClassification 
                     from bert-base-uncased, a leading model in NLP, I trained it on 4000 Amazon reviews of movies and TV shows, with 
                     1000 for validation. Achieving acceptable performance metrics—training loss of 0.54 and validation accuracy of 0.707 
                     on the final epoch—I aim to explore larger datasets for improved results.
@@ -177,11 +176,10 @@
                     tokenizing (special tokens, max length purpose, truncation), input ids (encoding, padding), and attention masks, Pandas.DataFrame, torch 
                     utilities such as DataLoader, Dataset, TensorDataset, RandomSampler, and SequentialSampler, 
                     and practical training elements such as learning rates, optimizing, epochs, schedulers, backwards propagation, loss 
-                    calculation, and validation accuracy calculation. This has been a rewarding experience so far. 
+                    calculation, and validation accuracy calculation. I also got some experience working with the YouTube API. This was a rewarding endeavor. 
                 </p> 
                 <p>
-                    Moving forward, the next phase involves integrating the YouTube API, allowing users to specify videos for sentiment 
-                    analysis based on scraped comments. 
+                    Demo video coming soon. 
                 </p> 
                 <a href="https://github.com/chocolatevanille/Sentiment-Analysis" target="_blank">
                     <button class="projects__btn" id="sentiment-button">
