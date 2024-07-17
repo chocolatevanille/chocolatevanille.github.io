@@ -50,23 +50,6 @@ const highlightMenu = () => {
 window.addEventListener('scroll', highlightMenu);
 window.addEventListener('click', highlightMenu);
 
-// window popup for images
-function openPopupLight() {
-    document.getElementById("popup-light").style.display = "block";
-}
-
-function closePopupLight() {
-    document.getElementById("popup-light").style.display = "none";
-}
-
-function openPopupDark() {
-    document.getElementById("popup-dark").style.display = "block";
-}
-
-function closePopupDark() {
-    document.getElementById("popup-dark").style.display = "none";
-}
-
 // closes mobile menu when clicking on a menu item
 const hideMobileMenu = () => {
     const menuBars = document.querySelector('.is-active')
