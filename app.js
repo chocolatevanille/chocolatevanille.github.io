@@ -35,7 +35,7 @@ const highlightMenu = () => {
         aboutMenu.classList.remove('highlight');
         projectsMenu.classList.remove('highlight');
         return
-    } else if (window.innerWidth > 960 && scrollPos < 7600) {
+    } else if (window.innerWidth > 960 && scrollPos < 8000) {
 
         projectsMenu.classList.add('highlight');
         offerMenu.classList.remove('highlight');
