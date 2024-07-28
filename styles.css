@@ -577,6 +577,26 @@
     font-weight: 500;
 }
 
+.offer__content ul {
+    list-style-type: square; 
+    padding-left: 20px;
+}
+
+.offer__content li {
+    padding-bottom: 8px;
+}
+
+.text_highlight span {
+    background: #ef32d9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #89fffd, #ef32d9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #89fffd, #ef32d9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    font-weight: bold;
+}
+
 .offer__btn {
     font-size: 1.8rem;
     background: #8E2DE2;  /* fallback for old browsers */
@@ -1109,6 +1129,34 @@
     cursor: pointer;
 }
 
+/*
+@keyframes fadeInOut {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 50%;
+    }
+}
+
+@keyframes moveGradient {
+    0% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(140px, -140px);
+    }
+    50% {
+        transform: translate(-160px, 120px);
+    }
+    75% {
+        transform: translate(-140px, -160px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+} */
+
 #portfolio-card {
     background: 
         radial-gradient(circle at 46% 84%, rgba(241, 93, 255, 0.3), transparent 39%),
@@ -1116,6 +1164,34 @@
         radial-gradient(circle at 80% 60%, rgba(241, 93, 255, 0.3), transparent 39%),
         linear-gradient(to right, #734b6d, #42275a);
 }
+
+/*
+#portfolio-card {
+    background: 
+        linear-gradient(to right, #734b6d, #42275a);
+    position: relative;
+    overflow: hidden;
+}
+
+#portfolio-card::before,
+#portfolio-card::after {
+    content: "";
+    position: absolute;
+    top: -50%; 
+    right: -50%; 
+    bottom: -50%; 
+    left: -50%; 
+    background: 
+    radial-gradient(circle at 46% 84%, rgba(180, 67, 190, 0.3), transparent 20%),
+    radial-gradient(circle at 33% 55%, rgba(214, 109, 209, 0.3), transparent 20%),
+    radial-gradient(circle at 80% 60%, rgba(241, 93, 255, 0.3), transparent 20%);
+    opacity: 0;
+    animation: fadeInOut 16s infinite, moveGradient 20s infinite;
+}
+
+#portfolio-card::after {
+    animation-delay: 3s;
+} */
 
 #recipes-card {
     background: 
