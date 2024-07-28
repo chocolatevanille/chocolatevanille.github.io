@@ -1157,14 +1157,6 @@
     }
 } */
 
-#portfolio-card {
-    background: 
-        radial-gradient(circle at 46% 84%, rgba(241, 93, 255, 0.3), transparent 39%),
-        radial-gradient(circle at 13% 55%, rgba(214, 109, 209, 0.2), transparent 55%),
-        radial-gradient(circle at 80% 60%, rgba(241, 93, 255, 0.3), transparent 39%),
-        linear-gradient(to right, #734b6d, #42275a);
-}
-
 /*
 #portfolio-card {
     background: 
@@ -1192,6 +1184,31 @@
 #portfolio-card::after {
     animation-delay: 3s;
 } */
+
+#masterthegods-card {
+    background: 
+        radial-gradient(circle at 67% 20%, rgba(241, 93, 255, 0.3), transparent 39%),
+        radial-gradient(circle at 13% 55%, rgba(214, 109, 209, 0.2), transparent 55%),
+        radial-gradient(circle at 80% 60%, rgba(241, 93, 255, 0.3), transparent 39%),
+        linear-gradient(to right, #734b6d, #42275a);
+}
+
+#masterthegods-android-card {
+    background: 
+        radial-gradient(circle at 34% 77%, rgba(241, 93, 255, 0.3), transparent 39%),
+        radial-gradient(circle at 78% 44%, rgba(214, 109, 209, 0.2), transparent 55%),
+        radial-gradient(circle at 48% 36%, rgba(241, 93, 255, 0.3), transparent 39%),
+        radial-gradient(circle at 12% 12%, rgba(241, 93, 255, 0.3), transparent 39%),
+        linear-gradient(to left, #734b6d, #42275a);
+}
+
+#portfolio-card {
+    background: 
+        radial-gradient(circle at 46% 84%, rgba(241, 93, 255, 0.3), transparent 39%),
+        radial-gradient(circle at 13% 55%, rgba(214, 109, 209, 0.2), transparent 55%),
+        radial-gradient(circle at 80% 60%, rgba(241, 93, 255, 0.3), transparent 39%),
+        linear-gradient(to right, #734b6d, #42275a);
+}
 
 #recipes-card {
     background: 
