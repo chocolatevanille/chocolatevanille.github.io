@@ -2,14 +2,6 @@ const menu = document.querySelector('#mobile-menu')
 const menuLinks = document.querySelector('.navbar__menu')
 const navLogo = document.querySelector('#navbar__logo')
 
-// displays mobile menu
-const mobileMenu = () => {
-    console.log('Mobile menu toggled'); // Add this line
-    menu.classList.toggle('is-active');
-    menuLinks.classList.toggle('active');
-}
-
-menu.addEventListener('click', mobileMenu);
 
 // shows active menu when scrolling
 const highlightMenu = () => {
@@ -61,3 +53,81 @@ const hideMobileMenu = () => {
 
 menuLinks.addEventListener('click', hideMobileMenu);
 navLogo.addEventListener('click', hideMobileMenu);
+
+document.addEventListener('DOMContentLoaded', function() {
+    const dropdownLinks = document.querySelectorAll('.dropdown-content li a');
+    const mobileDropdownLinks = document.querySelectorAll('.navbar__menu .navbar__links');
+    const dropdown = document.querySelector('.dropdown');
+    const dropdownContent = document.querySelector('.dropdown-content');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navbarMenu = document.querySelector('.navbar__menu');
+
+    // Handle smooth scrolling for desktop dropdown links
+    dropdownLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+
+            if (targetElement) {
+                const offset = -80; // Adjust this value to your desired offset
+                const elementPosition = targetElement.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset + offset;
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+
+    // Toggle dropdown on click (for mobile devices)
+    dropdown.addEventListener('click', function(e) {
+        if (window.innerWidth <= 960) {
+            dropdownContent.classList.remove('show');
+            e.preventDefault();
+        }
+    });
+
+    // Hide dropdown when clicking outside (for mobile devices)
+    document.addEventListener('click', function(e) {
+        if (!dropdown.contains(e.target) && window.innerWidth <= 960) {
+            dropdownContent.classList.remove('show');
+        }
+    });
+
+    // Handle mobile menu toggle
+    mobileMenu.addEventListener('click', function() {
+        mobileMenu.classList.toggle('is-active');
+        navbarMenu.classList.toggle('active');
+    });
+
+    // Handle smooth scrolling for mobile dropdown links
+    mobileDropdownLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            if (window.innerWidth <= 960) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    const offset = -95; 
+                    const elementPosition = targetElement.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset + offset;
+
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+
+                    // Close the mobile menu after clicking a link
+                    mobileMenu.classList.remove('is-active');
+                    navbarMenu.classList.remove('active');
+                }
+            }
+        });
+    });
+});
