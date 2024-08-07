@@ -2,4 +2,4 @@
 
 https://noelbarroncs.com
 
-This is my mobile-friendly portfolio website for potential employers.
+This is my mobile-friendly portfolio website. Come find my resume, learn about my personal life, explore my skills, and see my projects in action! 

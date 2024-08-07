@@ -257,7 +257,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 1200px;
+    max-width: 1460px;
     margin: 0 auto;
     height: 90%;
     text-align: center;
@@ -310,6 +310,7 @@
 }
 
 .courses {
+    max-width: 1200px;
     margin-top: 30px;
     font-size: 18px;
     background: #DA4453;  /* fallback for old browsers */
@@ -546,7 +547,7 @@
         object-fit: cover;
     }
 
-    .fa-envelope, .fa-code-branch {
+    .fa-linkedin, .fa-code-branch {
         font-size: 4rem;
     }
 
@@ -731,10 +732,6 @@
     background-image: linear-gradient(to right, #03001e, #7303c0, #ec38bc, #fdeff9);
 }
 
-.fa-code-branch, .fa-envelope {
-    font-size: 14rem;
-}
-
 #card-2 {
     background: #8E2DE2;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
@@ -789,7 +786,7 @@
         height: 250px;
     }
 
-    .fa-envelope, .fa-code-branch {
+    .fa-linkedin, .fa-code-branch {
         font-size: 4rem;
     }
 
@@ -947,8 +944,9 @@
     background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
 }
 
-.fa-code-branch, .fa-envelope {
+.fa-code-branch, .fa-linkedin {
     font-size: 14rem;
+    color: #fff;
 }
 
 #card-2 {
@@ -1005,7 +1003,7 @@
         height: 250px;
     }
 
-    .fa-envelope, .fa-code-branch {
+    .fa-linkedin, .fa-code-branch {
         font-size: 4rem;
     }
 
@@ -1457,6 +1455,10 @@
     font-size: 24px;
 }
 
+#linkedin-footer {
+    font-size: 24px;
+}
+
 .social__media {
     max-width: 1000px;
     width: 100%;
@@ -1533,13 +1535,3 @@
     z-index: 2; /* this makes navbar always on top 
 }
 */
-
-
-/* The below chunk makes the project containers expand upon hover*/
-/* Moving this functionality to the buttons instead */
-
-/*.projects__card:hover {
-    transform: scale(1.075);
-    transition: 0.3s ease-in;
-    cursor: pointer;
-} */
