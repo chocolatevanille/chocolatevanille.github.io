@@ -548,7 +548,7 @@
         object-fit: cover;
     }
 
-    .fa-linkedin, .fa-code-branch {
+    .fa-linkedin, .fa-code-branch, .fa-user-secret, .fa-sitemap, .fa-code {
         font-size: 4rem;
     }
 
@@ -575,7 +575,17 @@
 /* What I Offer Section */
 .offer {
     background-color: #131313;
-    padding: 10rem 0;
+    padding: 10rem 0 6rem;
+}
+
+.offer_mid {
+    background-color: #131313;
+    padding: 6rem 0;
+}
+
+.offer_bottom {
+    background-color: #131313;
+    padding: 6rem 0 10rem;
 }
 
 .offer__container {
@@ -596,17 +606,19 @@
     width: 100%;
 }
 
-.offer__content h1 {
+.offer h1 {
     font-size: 2rem;
-    background-color: #ff8177;
-    background-image: linear-gradient(to right, #8a2387, #e94057, #f27121);
-    background-size: 100%;
+    background: #fc00ff;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fc00ff 0%, #00dbde 100%);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fc00ff 0%, #00dbde 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
     text-transform: uppercase;
     margin-bottom: 16px;
+    text-align: center;
+    padding: 0rem 0 3rem;
 }
 
 .offer__content h2 {
@@ -787,7 +799,7 @@
         height: 250px;
     }
 
-    .fa-linkedin, .fa-code-branch {
+    .fa-linkedin, .fa-code-branch, .fa-user-secret, .fa-sitemap, .fa-code {
         font-size: 4rem;
     }
 
@@ -945,7 +957,7 @@
     background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
 }
 
-.fa-code-branch, .fa-linkedin {
+.fa-code-branch, .fa-linkedin, .fa-user-secret, .fa-sitemap, .fa-code {
     font-size: 14rem;
     color: #fff;
 }
@@ -1004,7 +1016,7 @@
         height: 250px;
     }
 
-    .fa-linkedin, .fa-code-branch {
+    .fa-linkedin, .fa-code-branch, .fa-user-secret, .fa-sitemap, .fa-code {
         font-size: 4rem;
     }
 

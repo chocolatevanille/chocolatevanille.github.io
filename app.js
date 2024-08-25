@@ -22,12 +22,12 @@ const highlightMenu = () => {
         homeMenu.classList.remove('highlight');
         offerMenu.classList.remove('highlight');
         return
-    } else if (window.innerWidth > 960 && scrollPos < 2200) {
+    } else if (window.innerWidth > 960 && scrollPos < 4400) {
         offerMenu.classList.add('highlight');
         aboutMenu.classList.remove('highlight');
         projectsMenu.classList.remove('highlight');
         return
-    } else if (window.innerWidth > 960 && scrollPos < 8800) { //add 800 per project card
+    } else if (window.innerWidth > 960 && scrollPos < 11000) { //add 800 per project card
 
         projectsMenu.classList.add('highlight');
         offerMenu.classList.remove('highlight');
