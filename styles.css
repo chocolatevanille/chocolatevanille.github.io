@@ -606,6 +606,11 @@
     width: 100%;
 }
 
+.offer__content a {
+    color: #FF69B4;
+    text-decoration: none;
+}
+
 .offer h1 {
     font-size: 2rem;
     background: #fc00ff;  /* fallback for old browsers */
